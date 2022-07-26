@@ -1,4 +1,4 @@
-// Randomize background
+// Randomize background - 5 background files found in /img
 var date = new Date();
 var hour = date.getHours();
 var bgpath = "img/";
@@ -26,23 +26,28 @@ function menuBar2() {
 	else{varBar0.style.display = "none"; varBar1.style.display = "block";}
 };
 // Title Date bar
-	var datetime = new Date();
-	console.log(datetime);
-	document.getElementById("datetime1").textContent = datetime; //it will print on html page
-		setInterval(clock, 1000);
-// Menu button functions
+function clock(){
+function refreshTime() {
+	const timeDisplay = document.getElementById("dateTime1");
+	const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	const dayString = new Date().getDay();
+	const dateString = new Date().toLocaleString();
+	const formattedString = weekday[dayString] + " - " + dateString.replace(", ", " - ");
+	timeDisplay.textContent = formattedString;}
+	setInterval(refreshTime, 1000);
+};
+// Menu button functions - Title bar titles commented out, replaced by Title Date bar
 function menuButton1() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle1.style.display === "none")
-		{varTitle1.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle1.style.display === "none"){varTitle1.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -56,17 +61,16 @@ function menuButton1() {
 		{varCont1.style.display = "block"; varCont2.style.display = "none"; varCont3.style.display = "none"; varCont4.style.display = "none"; varCont5.style.display = "none"; varCont6.style.display = "none"; varCont7.style.display = "none"; varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton2() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle2.style.display === "none")
-		{varTitle2.style.display = "block"; varTitle1.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle2.style.display === "none"){varTitle2.style.display = "block"; varTitle1.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
 	var varCont1 = document.getElementById("content-1"); 
 	var varCont2 = document.getElementById("content-2"); 
 	var varCont3 = document.getElementById("content-3"); 
@@ -80,17 +84,16 @@ function menuButton2() {
 		{varCont2.style.display = "block";varCont1.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton3() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle3.style.display === "none")
-		{varTitle3.style.display = "block"; varTitle2.style.display = "none"; varTitle1.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle3.style.display === "none"){varTitle3.style.display = "block"; varTitle2.style.display = "none"; varTitle1.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -104,17 +107,16 @@ function menuButton3() {
 		{varCont3.style.display = "block";varCont2.style.display = "none"; varCont1.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton4() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle4.style.display === "none")
-		{varTitle4.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle1.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle4.style.display === "none"){varTitle4.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle1.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -128,17 +130,16 @@ function menuButton4() {
 		{varCont4.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont1.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton5() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle5.style.display === "none")
-		{varTitle5.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle1.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle5.style.display === "none"){varTitle5.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle1.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -152,17 +153,16 @@ function menuButton5() {
 		{varCont5.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont1.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton6() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle6.style.display === "none")
-		{varTitle6.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle1.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle6.style.display === "none"){varTitle6.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle1.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -176,17 +176,16 @@ function menuButton6() {
 		{varCont6.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont1.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton7() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle7.style.display === "none")
-		{varTitle7.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle1.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle7.style.display === "none"){varTitle7.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle1.style.display = "none"; varTitle8.style.display = "none"; varTitle9.style.display = "none";}	
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -200,17 +199,16 @@ function menuButton7() {
 		{varCont7.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont1.style.display = "none";varCont8.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton8() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle8.style.display === "none")
-		{varTitle8.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle1.style.display = "none"; varTitle9.style.display = "none";}
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle8.style.display === "none"){varTitle8.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle1.style.display = "none"; varTitle9.style.display = "none";}
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
@@ -224,17 +222,16 @@ function menuButton8() {
 		{varCont8.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont1.style.display = "none"; varCont9.style.display = "none";}
 };
 function menuButton9() {
-	var varTitle1 = document.getElementById("title-1");
-	var varTitle2 = document.getElementById("title-2");
-	var varTitle3 = document.getElementById("title-3");
-	var varTitle4 = document.getElementById("title-4");
-	var varTitle5 = document.getElementById("title-5");
-	var varTitle6 = document.getElementById("title-6");
-	var varTitle7 = document.getElementById("title-7");
-	var varTitle8 = document.getElementById("title-8");
-	var varTitle9 = document.getElementById("title-9");
-	if (varTitle9.style.display === "none")
-		{varTitle9.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle1.style.display = "none";}	
+	//var varTitle1 = document.getElementById("title-1");
+	//var varTitle2 = document.getElementById("title-2");
+	//var varTitle3 = document.getElementById("title-3");
+	//var varTitle4 = document.getElementById("title-4");
+	//var varTitle5 = document.getElementById("title-5");
+	//var varTitle6 = document.getElementById("title-6");
+	//var varTitle7 = document.getElementById("title-7");
+	//var varTitle8 = document.getElementById("title-8");
+	//var varTitle9 = document.getElementById("title-9");
+	//if (varTitle9.style.display === "none"){varTitle9.style.display = "block"; varTitle2.style.display = "none"; varTitle3.style.display = "none"; varTitle4.style.display = "none"; varTitle5.style.display = "none"; varTitle6.style.display = "none"; varTitle7.style.display = "none"; varTitle8.style.display = "none"; varTitle1.style.display = "none";}	
 	var varCont1 = document.getElementById("content-1");
 	var varCont2 = document.getElementById("content-2");
 	var varCont3 = document.getElementById("content-3");
