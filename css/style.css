@@ -10,7 +10,7 @@ h1 {
     font-size: 20pt;
 }
 h2 {
-    margin: 14px;
+    margin: 10px;
 	white-space: nowrap;
 	color: #FFF;
 	font-weight: normal;
@@ -184,4 +184,41 @@ body {
 	border-color: rgba(255, 255, 255, 0.1);
 	box-sizing: border-box;
 	color: #FFF;
+	overflow-y:scroll;
+	overflow-x:hidden;
 }
+/*Content 1 Block Styling*/
+#content-1-menu{
+	position: relative;
+	width: 900px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(255, 255, 255, 0.1);
+	box-sizing: border-box;
+	transition: opacity 0.5s;
+	opacity: 0;
+}
+#content-1-menu:hover{
+	position: relative;
+	width: 900px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(255, 255, 255, 0.1);
+	box-sizing: border-box;
+	opacity: 1;
+}
+#content-1-1{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	height: 750px;
+	top: 0px;
+}
+
+
+
