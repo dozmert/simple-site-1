@@ -10,16 +10,6 @@ bgpath += ".jpg";
 var image = document.createElement("img");
 image.id = "bgimg";
 image.src = bgpath;    
-// Header title
-if ( hour >= 0 && hour < 12 ) {
-	document.getElementById("titletext").innerHTML = "Good morning, RIOT";
-}
-if ( hour >= 12 && hour < 18 ) {
-	document.getElementById("titletext").innerHTML = "Good afternoon, RIOT";
-}
-if ( hour >= 18 && hour < 23 ) {
-	document.getElementById("titletext").innerHTML = "Good afternoon, RIOT";
-};
 // Menu bar
 function menuBar1() {
 	var varBar0 = document.getElementById("menu-0");
@@ -36,11 +26,10 @@ function menuBar2() {
 	else{varBar0.style.display = "none"; varBar1.style.display = "block";}
 };
 // Title Date bar
-    var clockElement = document.getElementById('clock');
-    function clock() {
-        clockElement.textContent = new Date().toString();
-    }
-    setInterval(clock, 1000);
+	var datetime = new Date();
+	console.log(datetime);
+	document.getElementById("datetime1").textContent = datetime; //it will print on html page
+		setInterval(clock, 1000);
 // Menu button functions
 function menuButton1() {
 	var varTitle1 = document.getElementById("title-1");
