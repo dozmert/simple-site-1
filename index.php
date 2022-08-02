@@ -11,7 +11,6 @@
 		<!--Load JS-->
 		<script type='text/javascript' src='js/javascript.js'></script>
 		<script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script><!--RSS.APP widget-->
-		  
 	</head>
 	<body>
 		<!--Background Start-->
@@ -64,10 +63,8 @@
 					</div>
 					
 				</div>
-				<!--Content 2 Block-->
-				<div class='content-0' id='content-2'style='display: none;'>
-					<div><h3><script type='application/javascript' src='https://api.ipify.org?format=jsonp&callback=getIP'></script></h3></div><!--Public IP API-->
-					<div><iframe src='log/ip.log' width='900' height='200'></iframe></div><!--Print logfile-->
+				<div class='content-0' id='content-2'style='display: none;'>IP Logger
+				<div><?php include 'hello.php';?></div>
 				</div>
 				<div class='content-0' id='content-3'style='display: none;'>content 3</div>
 				<div class='content-0' id='content-4'style='display: none;'>content 4</div>

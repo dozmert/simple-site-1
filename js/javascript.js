@@ -259,8 +259,13 @@ function contentMenuButton9() {
 	if (varCont9.style.display === "none")
 		{varCont9.style.display = "block";varCont2.style.display = "none"; varCont3.style.display = "none";varCont4.style.display = "none"; varCont5.style.display = "none";varCont6.style.display = "none"; varCont7.style.display = "none";varCont8.style.display = "none"; varCont1.style.display = "none";}
 };
-
-
-
-
-
+// IP logger - public IP API
+function getIP(json) { 
+    document.write("Your public IP address is: ", json.ip);
+	dataLogging = json.ip;
+	ref = FileIO.ioOpen('log/ip.log');
+	FileIO.ioSetMark (ref, fileEnd);
+	FileIO.ioPuts(ref,dataLogging,EOL_CRLF);
+	FileIO.ioClose(ref);
+};
+// IP logger - logfile print
