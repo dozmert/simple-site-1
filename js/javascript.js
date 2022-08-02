@@ -262,10 +262,5 @@ function contentMenuButton9() {
 // IP logger - public IP API
 function getIP(json) { 
     document.write("Your public IP address is: ", json.ip);
-	dataLogging = json.ip;
-	ref = FileIO.ioOpen('log/ip.log');
-	FileIO.ioSetMark (ref, fileEnd);
-	FileIO.ioPuts(ref,dataLogging,EOL_CRLF);
-	FileIO.ioClose(ref);
 };
 // IP logger - logfile print
