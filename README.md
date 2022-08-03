@@ -1,1 +1,1 @@
-Simple Site 1
+Simple-site-1 is my first attempt at creating a website from scratch. It currently has no intended purposes outside of offering different div spaces to play with and experiment with ideas. My intention is to keep it template-like and flexible for different applications.
